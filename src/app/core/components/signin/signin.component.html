@@ -1,0 +1,8 @@
+<form (submit)="signIn()" [formGroup]="form"> 
+    <div class="divForm">
+        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Sign In</h3>
+        <input class="form-control" type="text"  placeholder="email" formControlName="email">
+        <input class="form-control" type="password"  placeholder="password" formControlName="password">
+        <input class="btn" style="background-color:#34d399; color: #fff;" type="submit" value="Submit" />
+    </div>
+</form>
