@@ -8,11 +8,13 @@ import { ProfileComponent } from './feature/profile/profile.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoreModule } from "./core/core.module";
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HomeComponent } from './feature/home/home.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        ProfileComponent
+        ProfileComponent,
+        HomeComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -22,7 +24,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
         NgbModule,
         CoreModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        SharedModule
     ]
 })
 export class AppModule { }
